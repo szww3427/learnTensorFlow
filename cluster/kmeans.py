@@ -1,3 +1,4 @@
+# copy  from https://gist.github.com/dave-andersen/265e68a5e879b5540ebc
 import tensorflow as tf
 import numpy as np
 import time

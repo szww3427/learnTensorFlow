@@ -1,3 +1,5 @@
+# copy from https://gist.github.com/dave-andersen/265e68a5e879b5540ebc
+# add summary
 import tensorflow as tf
 import numpy as np
 import time
