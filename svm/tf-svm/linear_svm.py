@@ -24,11 +24,15 @@ FLAGS = tf.app.flags.FLAGS
 def extract_data(filename):
 
     out = np.loadtxt(filename, delimiter=',');
+    print out.shape
 
     # Arrays to hold the labels and feature vectors.
     labels = out[:,0]
+    print labels.shape
     labels = labels.reshape(labels.size,1)
+    print labels.shape
     fvecs = out[:,1:]
+    print fvecs.shape
 
     # Return a pair of the feature matrix and the one-hot label matrix.
     return fvecs,labels
