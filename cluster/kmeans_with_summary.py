@@ -8,7 +8,6 @@ N=10000
 K=4
 MAX_ITERS = 1000
 
-test_writer = tf.summary.FileWriter("log")
 
 start = time.time()
 
@@ -54,6 +53,8 @@ init = tf.initialize_all_variables()
 
 sess = tf.Session()
 sess.run(init)
+
+test_writer = tf.summary.FileWriter("log",sess.graph)
 
 changed = True
 iters = 0
